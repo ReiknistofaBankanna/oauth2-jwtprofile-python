@@ -24,8 +24,6 @@ def load_key(filename, password):
     private_key = load_pem_private_key(pemlines, passw, default_backend())    
     return private_key
 
-#DEV
-#python oauth2_jwtprofile.py https://adfs.dev.rb.is/adfs/oauth2/token c:\\cert\\bragi_signing_dev_private.pem b1linis 1add817a-4641-4ab0-a881-679f34421af4 urn:rb.api
 
 if (len(sys.argv) != 6):
     print('Usage... adfsUrl certificatePath certificatePassword clientId resource')
